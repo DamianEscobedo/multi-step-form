@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="step-three.css">
+</head>
+<body>
+
+    <div class="main-container ">
+        <div class="header">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li>
+                        <a class="nav-list__link" href="index.html">
+                            <div class="nav-btn">1</div>
+                            <div class="list-item__text">
+                                <p>Paso 1</p>
+                                <strong>Infromación</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-list__link" href="step-two.html">
+                            <div class="nav-btn">2</div>
+                            <div class="list-item__text">
+                                <p>Paso 2</p>
+                                <strong>Seleccionar Plan</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-list__link">
+                            <div class="nav-btn active">3</div>
+                            <div class="list-item__text">
+                                <p>Paso 3</p>
+                                <strong>Complementos</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-list__link">
+                            <div class="nav-btn">4</div>
+                            <div class="list-item__text">
+                                <p>Paso 4</p>
+                                <strong>Total</strong>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="card-section">
+            <div class="card three">
+                <div class="card-header">
+                    <h1 class="card-title">
+                        Elige complementos
+                    </h1>
+                    <p class="introduction">
+                        Los complementos ayudan a mejorar su experiencia de juego.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <form class="add-ons" name="complementos">
+                        
+                        <label for="ons" class="ons-option">
+                            <div class="ons-input" >
+                                <input type="checkbox" id="ons" name="servicio" value="">
+                            </div>
+                            <div class="ons-name">
+                                <h4>Servicio en línea</h4>
+                                <p>Acceso a juegos multijugador</p>
+                            </div>
+                            <div class="ons-price servicio">
+                                +$1/mo
+                            </div>
+                        </label>
+
+                        <label for="ons2" class="ons-option ">
+                            <div class="ons-input" >
+                                <input type="checkbox" id="ons2" name="almacenamiento" value="">
+                            </div>
+                            <div class="ons-name">
+                                <h4>Almacenamiento más grande</h4>
+                                <p>1 TB adicional de almacenamiento en la nube</p>
+                            </div>
+                            <div class="ons-price almacenamiento">
+                                +$2/mo
+                            </div>
+                        </label>
+
+                        <label for="ons3" class="ons-option ">
+                            <div class="ons-input" >
+                                <input type="checkbox" id="ons3" name="personalizado" value="">
+                            </div>
+                            <div class="ons-name">
+                                <h4>Perfil personalizable</h4>
+                                <p>Tema personalizado en tu perfil</p>
+                            </div>
+                            <div class="ons-price personalizado">
+                                +$2/mo
+                            </div>
+                        </label>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="next-section step-two">
+            <a class="btn-back" href="step-two.html">Go Back</a>
+            <button class="btn-next">Siguiente</button>
+        </div>
+    </div>
+   
+   <script src="./step-three.js"></script> 
+</body>
+</html>

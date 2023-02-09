@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="step-two.css">
+</head>
+<body>
+    <div class="main-container ">
+        <div class="header">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li>
+                        <a class="nav-list__link" href="index.html">
+                            <div class="nav-btn">1</div>
+                            <div class="list-item__text">
+                                <p>Paso 1</p>
+                                <strong>Infromación</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-list__link">
+                            <div class="nav-btn active">2</div>
+                            <div class="list-item__text">
+                                <p>Paso 2</p>
+                                <strong>Seleccionar Plan</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-list__link">
+                            <div class="nav-btn">3</div>
+                            <div class="list-item__text">
+                                <p>Paso 3</p>
+                                <strong>Complementos</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-list__link">
+                            <div class="nav-btn">4</div>
+                            <div class="list-item__text">
+                                <p>Paso 4</p>
+                                <strong>Total</strong>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="card-section">
+            <div class="card two">
+                <div class="card-header">
+                    <h1 class="card-title">Selecciona tu plan</h1>
+                    <p class="introduction">
+                        Tienes la opción de facturación mensual o anual.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <form class="plan-options" name="plan">
+                        <div class="labels">
+                            <label class="plan-option active">
+                                <input type="radio" id="plan" name="plan" value="arcade" class="arcade" checked>
+                                <div class="plan-icon" >
+                                    <img src="./assets/images/icon-arcade.svg" alt="">
+                                </div>
+                                <div class="plan-name">
+                                    <h4>Arcade</h4>
+                                </div>
+                                <div class="plan-price arcade">
+                                    <p>$<span>9/mo</span></p>
+                                    <p class="promo-yearly">2 months free</p>
+                                </div>
+                            </label>
+
+                            <label class="plan-option">
+                                <input type="radio" id="plan" name="plan" value="advanced" class="advanced">
+                                <div class="plan-icon">
+                                    <img src="./assets/images/icon-advanced.svg" alt="">
+                                </div>
+                                <div class="plan-name">
+                                    <h4>Advanced</h4>
+                                </div>
+                                <div class="plan-price advanced">
+                                    <p>$<span>12/mo</span></p>
+                                    <p class="promo-yearly ">2 months free</p>
+                                </div>
+                            </label>
+                            <label class="plan-option">
+                                <input type="radio" id="plan" name="plan" value="pro" class="pro">
+                                <div class="plan-icon">
+                                    <img src="./assets/images/icon-pro.svg" alt="">
+                                </div>
+                                <div class="plan-name">
+                                    <h4>Pro</h4>
+                                </div>
+                                <div class="plan-price pro">
+                                    <p>$<span>15/mo</span></p>
+                                    <p class="promo-yearly ">2 months free</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="plan-change">
+                            <p class="plan-text mensual">Mensual</p>
+                            <div class="form-switch" action="">
+                                <label class="switch">
+                                    <input type="checkbox" name="planChange" value="year">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <p class="plan-text year">Anual</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card three">
+                <div class="card-header">
+                    <h1 class="card-title">
+                        Elige complementos
+                    </h1>
+                    <p class="introduction">
+                        Los complementos ayudan a mejorar su experiencia de juego.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <form class="add-ons">
+                        
+                        <label for="ons" class="ons-option active">
+                            <div class="ons-input" >
+                                <input type="checkbox" id="ons" name="ons">
+                            </div>
+                            <div class="ons-name">
+                                <h4>Servicio en línea</h4>
+                                <p>Acceso a juegos multijugador</p>
+                            </div>
+                            <div class="ons-price">
+                                +$1/mo
+                            </div>
+                        </label>
+
+                        <label for="ons2" class="ons-option ">
+                            <div class="ons-input" >
+                                <input type="checkbox" id="ons2" name="ons2">
+                            </div>
+                            <div class="ons-name">
+                                <h4>Almacenamiento más grande</h4>
+                                <p>1 TB adicional de almacenamiento en la nube</p>
+                            </div>
+                            <div class="ons-price">
+                                +$2/mo
+                            </div>
+                        </label>
+
+                        <label for="ons3" class="ons-option ">
+                            <div class="ons-input" >
+                                <input type="checkbox" id="ons3" name="ons3">
+                            </div>
+                            <div class="ons-name">
+                                <h4>Perfil personalizable</h4>
+                                <p>Tema personalizado en tu perfil</p>
+                            </div>
+                            <div class="ons-price">
+                                +$2/mo
+                            </div>
+                        </label>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="next-section step-two">
+            <a class="btn-back" href="index.html">Go Back</a>
+            <button class="btn-next">Siguiente</button>
+        </div>
+    </div>
+   
+   <script src="./step-two.js"></script> 
+</body>
+</html>

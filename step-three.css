@@ -1,0 +1,58 @@
+
+/*************************************/
+.ons-option{
+    border: 1px solid var(--lightGray);
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 24px 1fr 56px;
+    grid-template-rows: auto;
+    padding: 12px 8px;
+    margin-block-end: 12px;
+}
+@media only screen and (min-width: 1020px){
+    .ons-option{
+        height: 64px;
+    }
+}
+.ons-option.active{
+    background-color: var(--magnolia);
+    border: 1px solid var(--purplishBlue);
+}
+.ons-option:last-child{
+    margin-block-end: 0;
+}
+
+
+.ons-input{
+    align-self: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    
+}
+
+.ons-name{
+    align-self: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.ons-price{
+    align-self: center;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+
+    font-size: 14px;
+    text-align: right;
+    color: var(--purplishBlue);
+}
+
+
+
+.ons-name h4{
+    color: var(--marineBlue);
+    font-size: 14px;
+}
+.ons-name p{
+    color: var(--coolGray);
+    font-size: 14px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preload" as="image" href="./assets/images/bg-sidebar-mobile.svg" />
+    <link rel="preload" as="image" href="./assets/images/bg-sidebar-desktop.svg" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="main-container ">
+        <div class="header">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li>
+                        <a class="nav-list__link">
+                            <div class="nav-btn active">1</div>
+                            <div class="list-item__text">
+                                <p>Paso 1</p>
+                                <strong>Infromación</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-list__link">
+                            <div class="nav-btn">2</div>
+                            <div class="list-item__text">
+                                <p>Paso 2</p>
+                                <strong>Seleccionar Plan</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-list__link">
+                            <div class="nav-btn">3</div>
+                            <div class="list-item__text">
+                                <p>Paso 3</p>
+                                <strong>Complementos</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-list__link">
+                            <div class="nav-btn">4</div>
+                            <div class="list-item__text">
+                                <p>Paso 4</p>
+                                <strong>Total</strong>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="card-section">
+            <div class="card one">
+                <div class="card-header">
+                    <h1 class="card-title">Información Personal</h1>
+                    <p class="introduction">Proporcione su nombre, dirección de correo electrónico y número de teléfono.</p>
+                </div>
+                <div class="card-body">
+                    <form action="#" name="datos">
+                        <div class="input-container name">
+                            <div class="label-container">
+                                <label class="label" for="nombre">Nombre</label>
+                                <span class="label-required name">Este campo es obligatorio</span>
+                            </div>
+                            <input class="input" id="nombre" type="text" value="" name="nombre" placeholder="e.g. Stephen King">
+                        </div>
+                        <div class="input-container mail">
+                            <div class="label-container">
+                                <label class="label" for="correo">Correo electrónico</label>
+                                <span class="label-required mail">Este campo es obligatorio</span>
+                            </div>
+                             <input class="input" id="correo" type="email" name="correo" placeholder="e.g. stephenking@lorem.com"> 
+                        </div>
+                        <div class="input-container tel">
+                            <div class="label-container">
+                                <label class="label" for="telefono">Teléfono</label>
+                                <span class="label-required tel">Este campo es obligatorio</span>
+                            </div>
+                            <input class="input" id="telefono" type="tel" name="telefono" placeholder="e.g. +1 234 567 890">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="next-section">
+            <a class="btn-next" href="#" disabled >Siguiente</a>
+        </div>
+    </div>
+   
+   <script src="./script.js"></script> 
+</body>
+</html>

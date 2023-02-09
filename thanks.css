@@ -1,0 +1,22 @@
+.thanks-logo{
+    display: flex;
+    justify-content: center;
+    padding-block-start: 40px;
+}
+@media only screen and (min-width: 1020px){
+    .thanks-logo{
+        padding-block-start: 80px;
+    }
+}
+
+.card-tanks{
+    text-align: center;
+}
+
+.card-title-thanks{
+    padding-block: 24px 8px;
+}
+
+.card-tanks .introduction{
+    padding-block-end: 64px;
+}
