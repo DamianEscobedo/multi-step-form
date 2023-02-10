@@ -38,7 +38,6 @@ const datosViewFn = function(data){
     for (const prop in data.ons) {
 
         if(data.ons[prop] !== ''){
-            console.log(tipoPago[data.tipo][prop])
             totalNum += tipoPago[data.tipo][prop][2]
             let item = `
             <div class="total-ons__item">
@@ -50,7 +49,6 @@ const datosViewFn = function(data){
         }
     }
     
-    console.log(totalNum)
     document.querySelector('.total-ons').innerHTML = itemAll
     document.querySelector('.final-tipo').textContent = tipoPago[data.tipo].texto[0]
     document.querySelector('.final-numero').textContent = `+$${totalNum}${tipoPago[data.tipo].texto[1]}`

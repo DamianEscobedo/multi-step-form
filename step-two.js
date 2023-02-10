@@ -1,8 +1,6 @@
 let data = localStorage.getItem('data');
 let datos = JSON.parse(data)
 
-console.log(datos)
-
 
 
 let planOption = document.querySelectorAll('.plan-option')
@@ -34,8 +32,8 @@ let pricePro = document.querySelector('.plan-price.pro span');
 let priceAdvance = document.querySelector('.plan-price.advanced span');
 let priceArcade = document.querySelector('.plan-price.arcade span');
 
-
 const datosPrevios = function(){
+
     for (let i = 0; i < planOptionArry.length; i++) {
         planOptionArry[i].classList.remove('active')
     }
@@ -43,17 +41,27 @@ const datosPrevios = function(){
         let inputSlect = document.querySelector(`input.${datos.plan}`);
         inputSlect.checked = true;
         inputSlect.parentNode.classList.add('active');
-        console.log(datos.tipo)
+
+        if(datos.tipo === 'year'){
+            tipoPlan.checked = true
+            planChange.classList.add('active');
+
+            datos.plan = formPlan.elements.plan.value;
+            tipo = datos.tipo
+
+        }else{
+            planChange.classList.remove('active');
+            tipoPlan.checked = false
+
+            datos.plan = formPlan.elements.plan.value;
+            tipo = datos.tipo
+
+        }
+
     }
     
     
-    if(datos.tipo === 'year'){
-        tipoPlan.checked = true
-        planChange.classList.add('active');
-    }else{
-        planChange.classList.remove('active');
-        tipoPlan.checked = false
-    }
+    
 }
 
 datosPrevios()
@@ -75,11 +83,11 @@ planOption.forEach( option => {
 tipoPlan.addEventListener('change', (event) => {
 
     if(formPlan.planChange.checked){
+
         planChange.classList.add('active');
 
         for (let i = 0; i < promoYearlyArry.length; i++) {
             promoYearlyArry[i].classList.add('year');
-            
         }
        
         tipo = 'year';
@@ -102,8 +110,10 @@ tipoPlan.addEventListener('change', (event) => {
 })
 
 btnNext.addEventListener('click', function(e) {
+
     datos.plan = formPlan.elements.plan.value;
-    datos.tipo = tipo;
+    datos.tipo = tipo ;
+
     window.localStorage.setItem('data', JSON.stringify(datos));
     window.location="step-three.html";
     

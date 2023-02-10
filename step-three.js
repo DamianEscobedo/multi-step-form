@@ -1,16 +1,18 @@
 let data = localStorage.getItem('data');
 let datos = JSON.parse(data)
 
+
+
 const form = document.forms.complementos
 
 const datosPrevios = function(data){
     for (const prop in data.ons) {
         if(data.ons[prop] !== ''){
             form.elements[prop].checked = true;
+            form.elements[prop].value = datos.ons[prop]
             form.elements[prop].parentNode.parentNode.classList.add('active')
         }
-    }
-    
+    } 
 }
 
 datosPrevios(datos)
@@ -62,6 +64,7 @@ let btnNext = document.querySelector('.btn-next');
 
 
 btnNext.addEventListener('click', function(){
+
     datos.ons = {
         servicio: form.elements.servicio.value,
         almacenamiento: form.elements.almacenamiento.value,
