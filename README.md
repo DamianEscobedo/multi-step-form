@@ -26,7 +26,7 @@ Users should be able to:
 ### Screenshot
  Mobile layout                                                                       | Desktop layout                                                                        |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| <img src="./creencapture-127-0-0-1-5500-index-html-2023-02-09-00_15_26.png" />| <img src="./screencapture-127-0-0-1-5500-index-html-2023-02-09-00_14_47.png" /> |
+| <img src="./screencapture-127-0-0-1-5500-index-html-2023-02-09-00_15_26.png" />| <img src="./screencapture-127-0-0-1-5500-index-html-2023-02-09-00_14_47.png" /> |
 
 
 ### Links
