@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://damianescobedo.github.io/multi-step-form/index.html))
+- Live Site URL: [Add live site URL here](https://damianescobedo.github.io/multi-step-form/index.html)
 
 ## My process
 
