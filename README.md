@@ -31,8 +31,6 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://kenyontu.github.io/frontend-mentor-multi-step-form/](https://kenyontu.github.io/frontend-mentor-multi-step-form/)
-
 - Live Site URL: [https://damianescobedo.github.io/multi-step-form/](https://damianescobedo.github.io/multi-step-form/index.html)
 
 ## My process
